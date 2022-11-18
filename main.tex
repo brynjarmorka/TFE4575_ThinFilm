@@ -1,0 +1,158 @@
+\documentclass[5p,sort&compress]{elsarticle}	
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{\footnotesize\itshape
+       \hfill\today}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{dcolumn}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}
+\usepackage{lmodern}
+\renewenvironment{abstract}{\global\setbox\absbox=\vbox\bgroup
+\hsize=\textwidth\def\baselinestretch{1}%
+\noindent\unskip\textbf{Abstract}
+\par\medskip\noindent\unskip\ignorespaces}
+{\egroup}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption} %% figurer fugler
+\usepackage{bm}
+\usepackage{siunitx}
+\sisetup{
+exponent-product = \cdot,
+output-decimal-marker  =  {.}, % komma-stil
+separate-uncertainty = false, %true hvis du ikke vil ha usikkerhet i parentes
+per-mode = symbol,
+group-digits = false,
+}
+\usepackage{graphicx}
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{10}
+\usepackage{flafter}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{cleveref}
+\usepackage{comment}
+\usepackage{arydshln}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+
+% Dakrmode
+\usepackage{xcolor}
+\pagecolor[rgb]{0.128, 0.128, 0.128}  %black
+\color[rgb]{0.848, 0.848, 0.848}  %grey
+
+\urlstyle{same}
+
+
+%%% LINK TIL DRIVE MED DATA
+
+% https://drive.google.com/drive/folders/1--5J3TUoHqHPiAaSORvcn1TaKvSFUdGK?usp=sharing
+
+%%%
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{TFE4575: Chemical methods for thin film deposition}
+  %\title{Characterization of an Unknown Sample Using Scanning Electron Microscopy, Scanning Transmission Electron Microscopy, Energy Dispersive X-Ray Spectroscopy, Atomic Force Microscopy, and Raman Spectroscopy}
+
+  \author[fysikk]{Brynjar Morka Mæhlum}
+  \author[fysikk]{Thord Niri Gjesdhal Heggren}
+
+
+  \address[fysikk]{Department of Physics, Norwegian University of Science and Technology, 7491 Trondheim, Norway.}
+
+  \begin{abstract}
+
+    \noindent So abstract, wow!
+
+  \end{abstract}
+
+
+\end{frontmatter}
+
+{ % Denne gjør table of contents pink i stedet for blå
+\hypersetup{linkcolor=pink}
+\tableofcontents
+}
+
+%%%%%%%%%%%%%%%%%%% THEORY %%%%%%%%%%%%%%%%%%
+\section{Theory}
+
+\input{chapters/theory.tex}
+
+%%%%%%%%%%%%%%%%%%% METHODS %%%%%%%%%%%%%%%%%%
+\section{Methods}
+\input{chapters/methods.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
+\section{Results}
+
+resul
+
+\noindent Best results ever, am I right?!
+
+\subsection{Optical Images}
+
+\subsection{Profilometer}
+
+For the profilometer analysis, you should perform this at three different places on the sample. Make profiles from the edge of the sample and to the center.
+
+\subsection{Scanning Electron Microscope}
+
+Results should also include SEM and optical images of both samples. It may be that you need to coat the samples with a conductive coating (i.e. carbon or gold) for SEM imaging as barium titanate is not very conductive. Comment on whether or not you did this in your report. Since coating might be necessary, it is recommended that you do the profilometer and the optical analysis first, as coating will affect the roughness and the thickness of the sample.
+
+At least two magnifications of each sample (for SEM and optical microscope) should be shown in the report. It is important to get one overview image, which shows the overall morphology of the film; and one closer image where you only focus on a small section to look at grain size, close-up of cracks and other potential surface artifacts.
+
+%%%%%%%%%%%%%%%%%%% DISCUSSION %%%%%%%%%%%%%%%%%%
+\section{Discussion}
+
+\noindent I think this. No this is much better. Every discussion ever.
+
+%%%%%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+
+\noindent To conclude, this is boring!
+
+
+
+
+
+%%%%%%%%%%%%%% REFERANSER %%%%%%%%%%%%%%%%%%
+
+\begingroup
+\begin{center}
+  \rule{2cm}{.4pt}
+\end{center}
+\makeatletter
+\@beginparpenalty=10000
+\makeatother
+\bibliographystyle{unsrt} %unsrtnat
+\bibliography{references}
+
+
+\endgroup
+
+\end{document}
