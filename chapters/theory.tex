@@ -38,12 +38,30 @@ Citric acid is a chelating agent, which means that it reacts with the metal ions
 In the barium solution, EDTA is works as an additional complexing agent.
 Finally, since the complex stability depends on the pH, the ammonia solution is used to for adjustments.
 
-\subsection{Equipment}
-
 \subsection{Profilometer}
 
-\noindent Profilometers are instruments used to extract topographical data from a surface.
-This can either be from a single point or a line.
+\noindent This subsection is based on \textit{nanoSience Instruments} optical profilometry manual \cite{profilometer_manual}.
+
+Profilometers are instruments used to extract topographical data from a surface, textit{e.g.} surface morphology, step heights, and surface roughness.
+This can either be done using a physical probe or by using light, and is then called stylus profilometey and optical profilometry, respectively.
+Stylus profilometers typically gives a height profile along a line, while optical profilometers gives a height profile over an area.
+All profilometers is built up of two main parts - a detector and a sample stage. 
+The detector determines where and how the measurements are taken, while the sample stage holds the sample.
+
+In stylus profilometry, the stylus is physically in contact with the sample surface. 
+This is schematicly shown in figure \autoref{fig:stylus_profilometer}.
+At each x-y point, a force feedback loop measures the interactions between the stylus tip and the surface, and the z-value is extracted.
+This method provides high vertical resolution, and is good for measuring step heights. 
+However, as there is physical contact, the surface can potentially be contaminated or damaged.
+Also, the stylus tip size and shape infueneces the measurement, and thus limits the lateral resolution.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/profilometer.png}
+    \caption{Schematic illustration of a stylus profilometer. Figure adapted from \cite{profilometer_manual}.}
+    \label{fig:stylus_profilometer}
+\end{figure}
+
 
 \subsection{Scanning Electron Microscope}
 
@@ -61,7 +79,7 @@ If the sample is not conductive enough, it can be coated with a thin layer of go
 If a sample is partly conductive, a lower voltage can be used to get an image without distortion.
 
 % seeing ferro electric domains in SEM
-The SEM can be used to see ferroelectric domains structures in a sample, as illustrated in %\cref{fig:ferroelectric_domains_SEM_Hunnestad2019} from \cite{hunnestad_visualizing_2019}. 
+The SEM can be used to see ferroelectric domains structures in a sample, as illustrated in %\autoref{fig:ferroelectric_domains_SEM_Hunnestad2019} from \cite{hunnestad_visualizing_2019}. 
 The image was taken on the SEM APREO at NTNU NanoLab with 1.5 kV and 50 pA, and gives an overview of the domains in the sample.
 
 % good about the SEM?

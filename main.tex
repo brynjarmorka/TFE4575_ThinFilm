@@ -43,10 +43,10 @@ group-digits = false,
 \usepackage{flafter}
 \usepackage{booktabs}
 \usepackage{multirow}
-\usepackage{hyperref}
+\usepackage[colorlinks,linkcolor=pink]{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=purple,
     filecolor=magenta,      
     urlcolor=cyan,
 }
@@ -58,9 +58,10 @@ group-digits = false,
 
 % Dakrmode
 \usepackage{xcolor}
-\pagecolor[rgb]{0.128, 0.128, 0.128}  %black
-\color[rgb]{0.848, 0.848, 0.848}  %grey
+% \pagecolor[rgb]{0.128, 0.128, 0.128}  %black
+% \color[rgb]{0.848, 0.848, 0.848}  %grey
 
+\usepackage{svg}
 \urlstyle{same}
 
 
@@ -84,7 +85,12 @@ group-digits = false,
 
   \begin{abstract}
 
-    \noindent So abstract, wow!
+    \noindent In this project, a Barium-Titanium-Oxide (BTO) thin film was made on a Si-Pt substrate using a sol-gel processing method. 
+    The BTO film was made by first making a barium sol, and then combining it with a premade titanium sol. 
+    This mixture was applied to the substrate using spin coating, followed by drying at 200°C and sintering at 700°C.
+    The film was then characterized using an optical microscope, a stylus profilometer, and a scanning electron microscope.
+    The optical microscope indicated that the film in general was homogenous, but that some artifacts were present.
+    
 
   \end{abstract}
 
@@ -92,7 +98,7 @@ group-digits = false,
 \end{frontmatter}
 
 { % Denne gjør table of contents pink i stedet for blå
-\hypersetup{linkcolor=pink}
+\hypersetup{linkcolor=purple}
 \tableofcontents
 }
 
@@ -109,12 +115,11 @@ group-digits = false,
 
 %%%%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
 \section{Results}
-
 \input{chapters/results.tex}
+
 %%%%%%%%%%%%%%%%%%% DISCUSSION %%%%%%%%%%%%%%%%%%
 \section{Discussion}
-
-\noindent I think this. No this is much better. Every discussion ever.
+\input{chapters/discussion.tex}
 
 %%%%%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%%%%%%%
 \section{Conclusion}
