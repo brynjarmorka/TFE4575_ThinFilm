@@ -71,8 +71,10 @@ The only data processing done was to center the data around zero, to make the da
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.45\textwidth]{figures/profilometer_graph.jpg}
-    \caption{Profilometer data.
-        Plotted with the mean centered around zero.}
+    \caption{Profilometer data showing scan 1, 2, and 3.
+        Plotted with the mean centered around zero.
+        The plots are with slightly different scales on the y-axis to include as much info as possible.
+        Acquired at NTNU NanoLab with the \dots}
     \label{fig:profilometer}
 \end{figure}
 
@@ -86,41 +88,53 @@ SEM images were acquired on the SEM APREO at NTNU NanoLab, without coating of th
 One of the engineers at NanoLab suggested that the sample would be conductive enough, and showed examples of SEM results from other ferroelectric thin films that were not coated, e.g. \cite{hunnestad_visualizing_2019}.
 The examples used low voltage and low current, which was also used in this work.
 
+% SEM image of what might be pores
+\autoref{fig:sem_overview} shows a closer SEM image of a part of the sample.
+The image was taken with 5 kV and 0.1 nA, using the T2 SE detector, thus getting only topography contrast.
+The scale bar is 5 \textmu m.
 
 % SEM image of the corner
 \autoref{fig:sem_high_res} shows an overview SEM image of a corner, which is the same area in the optical image in \autoref{fig:optical_overview}.
 The image was taken with 3 kV and 50 pA, using the EDT detector to get both topography and z-contrast.
 The scale bar is 250 \textmu m.
 
-
-% SEM image of what might be pores
-\autoref{fig:sem_overview} shows a closer SEM image of a part of the sample.
+% SEM image of artifact which is 10 um long
+\autoref{fig:sem_artifact} shows a close up SEM image of an artifact which is 15 \textmu m long and 5 \textmu m wide.
 The image was taken with 5 kV and 0.1 nA, using the T2 SE detector, thus getting only topography contrast.
-The scale bar is 5 \textmu m.
-
-
-% SEM image filename figures/sem-high-res.jpg
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/sem_high_res.jpg}
-    \caption{Overview SEM image of a corner of the sample.
-        The scale bar is 250 \textmu m.
-        5 kV, 100 pA, T2 SE detector, 3.0 mm WD.
-        Acquired at NTNU NanoLab.
-    }
-    \label{fig:sem_high_res}
-\end{figure}
+The scale bar is 10 \textmu m.
 
 % SEM image filename figures/sem-overview.jpg
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.45\textwidth]{figures/sem_overview.jpg}
+    \includegraphics[width=0.45\textwidth]{figures/sem_overview_250um.jpg}
     \caption{Overview SEM image of a part of the sample.
-        The scale bar is 5 \textmu m.
-        3 kV, 50 pA, EDT detector, 3.9 mm WD.
+        The scale bar is 250 \textmu m.
+        3 kV, 50 pA, EDT detector, 3.9 mm WD, 200X magnification.
         Acquired at NTNU NanoLab.
     }
     \label{fig:sem_overview}
 \end{figure}
 
+% SEM image filename figures/sem-high-res.jpg
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/sem_high_res_5um.jpg}
+    \caption{Overview SEM image of a corner of the sample.
+        The scale bar is 5 \textmu m.
+        5 kV, 100 pA, T2 SE detector, 3.0 mm WD, 12000X magnification.
+        Acquired at NTNU NanoLab.
+    }
+    \label{fig:sem_high_res}
+\end{figure}
 
+% SEM image artifact
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/sem_artifact_10um.jpg}
+    \caption{A close up SEM image of an artifact.
+        The scale bar is 10 \textmu m.
+        5 kV, 100 pA, T2 SE detector, 3.0 mm WD, 5000X magnification.
+        Acquired at NTNU NanoLab.
+    }
+    \label{fig:sem_artifact}
+\end{figure}

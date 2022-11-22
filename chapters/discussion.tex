@@ -7,7 +7,7 @@ Different thicknesses will reflect light differently and thus be another color.
 The reason for this deviation might be due to bad spin coating or some edge effect during the heating steps.
 
 In the same figure, there is a large, circular artifact.
-Visually, this looks like the film has flaked off the substrate. 
+Visually, this looks like the film has flaked off the substrate.
 It is difficult to extract the exact reason why this happened.
 One suggestion is that the adhesion between the film and the substrate was insufficient due to bad cleaning.
 However, if this was the case, one could probably expect this to happen in other areas as well.
@@ -21,29 +21,76 @@ However, with the information available from only optical images, it is not poss
 
 \subsection{Profilometer}
 
-\noindent In general, the results from the profilometer shows that the film is very flat.
-
 % flattness and roughness. STD is RMS which kinda is roughness
+\noindent In general, the results from the profilometer shows that the film is very flat.
+The STD of the three measurements is a way of quantifying the roughness of the film, and the values are low.
+The mean values in \autoref{tab:profilometer} give that the STDs are $(4.19 + 5.75 + 11.73) \textnormal{ nm} / 3  = 7.22 \textnormal{ nm}$, which is not completely flat, but still not too rough. % $\frac{(4.19 + 5.75 + 11.73) \textnormal{nm}}{3}  = 7.22 \textnormal{nm}$
+The quantiles are another way of quantifying the roughness of the film.
+The Q1 and Q3 values are the 25th and 75th percentiles, respectively.
+The difference between these two values is the interquartile range (IQR), which is a measure of the spread of the data.
+The first measurement have a sharp artifact at around 900 \textmu m, but is also the flattest of the three measurements.
+The second measurement have some smaller irregularities, but is still quite flat.
+The third measurement have one large artifact between 2500 and 3500 \textmu m, but is also the roughest of the three measurements.
+When plotting the three measurements on the same scale, the first and second measurements are very similar, while the third is more rough.
 
 % potential pores
+The profilometer data show potential signs of pores in the film.
+There are some dips in the plotted data, which are ranging from 5 to 15 nm.
+A dip this shallow is not large enough to be considered a pore, but it is still a sign of a potential pore.
+It could be that the tip is too wide to detect pores, since the dips are around 10 \textmu m long.
+The tip of the stylus is 12.5 \textmu m wide, so it is likely that the dips are too small to be detected.
+The SEM data could potentially show if there are pores in the film.
+An argument against the existence of pores is that the dips are going both up and down, which would be unlikely if there were pores and not just a rough surface. % Holder dette argumentet vann?
 
-% artifacts. peak and deformation
+% artifacts 1, the peak. peak and 
+The profilometer data also show some artifacts.
+The most obvious one is the peak at around 900 \textmu m in the first measurement.
+This peak is 50 nm above the average and are 10 \textmu m long.
+The artifact is could be a contamination on top of the surface of the film, or it could be a contamination which was in the gel before the ageing.
+The last possibility fits well with the SEM image of an artifact shown in \autoref{fig:sem_artifact}.
+
+% artifacts 2, the deformation
+A second artifact shown in the profilometer data is the deformation at around 2500 \textmu m in the third measurement.
+This deformation have a bell shape and is 20 nm high and 1000 \textmu m long.
+This artifact is probably a deformation since the optical and SEM images did not show any contaminations that big.
+
 
 \subsection{SEM}
 
 % roughness in SE images.
+\noindent The SEM images show that the film have a continous surface, edge effects, some roughness, and potentially some pores.
+The roughness is visible in the high resolution images as darker craters in \autoref{fig:sem_high_res} and as small "bubbles" in \autoref{fig:sem_artifact}.
+The potential pores are visible as small lighter dots in the high resolution images in \autoref{fig:sem_high_res}.
 
-%  morphology of the surface
+% surface cracked or smooth, and edge/corner effects
+The overview in \autoref{fig:sem_overview} shows clearly that the surface at the corner is cracked or flaked.
+The defect is most likely flaking and not cracking, as the defects are not sharp.
+The different grey levels are probably due to the z-contrast, showing the exposed wafer benethe the film as a lighter grey.
+The area is the same as in the optical image in \autoref{fig:optical_overview}, and the SEM image shows that the film is not homogenous in this area.
+The high resolution SEM image in \autoref{fig:sem_high_res} is also taken at a edge, but not at a corner.
+The high resolution image show that the edge effects are not as severe on the whole surface as in the overview image.
+The reason for a worse edge effect at the corner could be that the spin coating is harder to get right at the corner, or it could just be handling of the sample.
+While handling the sample, the edges are more exposed and it is easiest to pick up the sample from the corner.
 
-% surface cracked or smooth
-
-% edge effect and corner
-
-% artifacts
 
 % pores we might see
+The potential pores visible in the high resolution SEM image as lighter dots could also be the film defect called pin holes.
+Pin holes are small holes in the film, which are caused by dirt and impurities in the gel.
 
 % compare flaked corner with optical image. What we see in SEM and not in optical
+The SEM image in \autoref{fig:sem_overview} confirms that the flaked corner in the optical image in \autoref{fig:optical_overview} is quite bad.
+The many different colors in the optical image could maybe be interpreted as different thicknesses, but this was not explored further.
+Since the SEM image have z-contrast, it is possible to assert that it is actually the wafer beeing exposen underneath the film.
+The optical image only shows that the film is badly damaged.
+When looking at artifacts it is easier to assert if an artifact is on top of the film in the SEM, because the focus is easier to control.
+However, artifacts inside the film are hard to see in the SEM, because SE images get contrast from the very first few nanometers of the sample.
 
-
-% which section gives best morphology results
+% which one gives best morphology results
+The SEM images and the profilometer give far better morphology results than the optical images.
+The profilometer does give a higher resolution then the SEM on the surface, but the SEM gives a much better overview of the surface.
+It is easier to conclude on the morphology when looking at a two dimensional image, than when looking at a more precise data plot from the profilometer, which only gives a one dimensional view of the surface.
+The biggest advantage of the profilometer is the possibility to quantify the roughness of the film.
+The SEM can reveil both bigger and smaller artifacts, and it is easier to decide what the artifact might be when the image also includes the area around the artifact.
+This is examplified in the SEM image in \autoref{fig:sem_artifact}, where the artifact is clearly visible, and at the same time showing that the artifact made a deformation in the film.
+Further inspection of the artiface could reveil if it is a contamination or a deformation, e.g. by analysing the composition with energy dispersive x-ray spectroscopy (EDS).
+An even better surface morphology could be achieved by using an AFM or the NanoSurf (Niri?????), but these instrument were not available for this project.
